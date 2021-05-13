@@ -12,7 +12,7 @@ section {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -185,6 +185,8 @@ a {
   margin: 0 0 20px 0;
   font-size: 17px;
   width: 100%;
+  border: none;
+  border-radius: 10px;
 }
 
 .form-button__headers {
@@ -248,6 +250,36 @@ a {
 }
 
 /*price*/
-.price {
-  
+.price-text p {
+  text-align: center;
+}
+.price-items {
+  display: flex;
+}
+
+.price-item {
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(141, 135, 134, 0.2);
+  margin: 20px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.price-item h4 {
+  font-size: 20px;
+}
+
+.price-btn {
+    background-color: #cc1d00;
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.price-btn:hover {
+  color: #fff;
+  background-color: red;
 }
