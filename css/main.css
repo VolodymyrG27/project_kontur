@@ -201,7 +201,6 @@ a {
 /*opportunities*/
 
 .opportunities {
-  
   background-color: #F2F2F2;
 }
 
@@ -214,13 +213,13 @@ a {
   padding: 10px;
 }
 
-.opportunities-info h2 {
+.opportunities-info h2, .system-info h2 {
   color: #cc1d00;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
 }
 
-.opportunities-info p {
+.opportunities-info p, .system-info p {
   font-size: 16px;
   line-height: 28px;
 }
@@ -267,13 +266,14 @@ a {
 
 .price-item h4 {
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .price-btn {
     background-color: #cc1d00;
     width: 300px;
     position: absolute;
-    bottom: 10px;
     padding: 20px;
     border: none;
     border-radius: 10px;
@@ -283,3 +283,56 @@ a {
   color: #fff;
   background-color: red;
 }
+
+.price-item__info span {
+  font-size: 16px;
+  font-family: 'Open Sans', bold;
+}
+
+.price-item__info p {
+  color: #808080;
+}
+
+/*systems*/
+
+.systems {
+  background-color: #F2F2F2;
+}
+
+.system-column {
+  display: flex;
+}
+
+.system-service {
+  padding: 10px;
+  flex-basis: 65%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+.system-info {
+  flex-basis: 35%;
+}
+
+.items-service {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.service-card {
+  text-align: center;
+}
+
+/*about*/
+
+.about-product h2 {
+  text-align: center;
+}
+
+.about-product p {
+  text-align: center;
+} 
