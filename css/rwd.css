@@ -1,0 +1,43 @@
+/*navogation*/
+
+
+
+  @media (min-width: 768px) {
+    .area {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .area {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .area {
+      width: 1140px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar > .toggle {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar > .list {
+      display: flex;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar > .list {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+  }

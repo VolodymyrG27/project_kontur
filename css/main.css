@@ -1,0 +1,253 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+section {
+  padding: 30px 0 30px 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*title h2*/
+
+.title-h2 {
+  color: #cc1d00;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+.area {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.navbar-component {
+  background-color: #fff;
+}
+
+.navbar-component > .navbar {
+    justify-content: space-between;
+}
+
+.navbar > .brand {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.navbar > .toggle {
+    outline: none;
+    border: 0;
+    display: inline-block;
+    background-color: transparent;
+    background-image: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding: 22px;
+}
+
+.navbar > .toggle > .icon {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navbar > .toggle > .icon,
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
+  display: block;
+  width: 24px;
+  height: 3px;
+  transition: background-color 0.3s linear, transform 0.3s linear;
+  background-color: #555555;
+}
+
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
+  position: absolute;
+  content: "";
+}
+
+.navbar > .toggle > .icon:before {
+  top: -8px;
+}
+
+.navbar > .toggle > .icon:after {
+  top: 8px;
+}
+
+.navbar > .toggle.-active > .icon {
+  background-color: transparent;
+}
+
+.navbar > .toggle.-active > .icon:before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar > .toggle.-active > .icon:after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar > .list {
+  display: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.navbar > .list.-on {
+    display: flex;
+}
+  .navbar > .list > .item {
+    display: block;
+    flex-shrink: 0;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 14px;
+  }
+  .navbar > .list > .item.-link {
+    line-height: 68px;
+    color: #555;
+    border-bottom: 4px solid transparent;
+  }
+  .navbar > .list > .item.-link.-active,
+  .navbar > .list > .item.-link:hover,
+  .navbar > .list > .item.-link:focus {
+    color: #333;
+    border-bottom-color: #cc1d00;
+  }
+
+  /*HEADER*/
+
+  .headers {
+    background: url(../img/background.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .text-headers {
+    padding: 30px;
+  }
+
+  .headers-info {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .text-headers h1 {
+    color: #cc1d00;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .form-headers {
+    flex-basis: 40%;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 5px 22px rgba(31, 76, 108, 0.2);
+    border-radius: 10%;
+}
+
+.form1 {
+  padding: 20px;
+}
+
+.form1 input {
+  padding: 15px;
+  border: 1px solid #848484;
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 17px;
+  width: 100%;
+}
+
+.form-button__headers {
+  background-color: #cc1d00;
+}
+
+.form-button__headers:hover {
+  background-color: red;
+  color: white;
+}
+
+/*opportunities*/
+
+.opportunities {
+  
+  background-color: #F2F2F2;
+}
+
+.opportunities-column {
+  display: flex;
+}
+
+.opportunities-info {
+  flex-basis: 35%;
+  padding: 10px;
+}
+
+.opportunities-info h2 {
+  color: #cc1d00;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.opportunities-info p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.opportunities-service {
+  padding: 10px;
+  flex-basis: 65%;
+  text-align: center;
+}
+
+.items-cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 130px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.card h4 {
+  margin-top: 20px;
+}
+
+/*price*/
+.price {
+  
+}
